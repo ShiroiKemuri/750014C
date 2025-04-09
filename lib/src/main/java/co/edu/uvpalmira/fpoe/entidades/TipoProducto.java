@@ -7,10 +7,23 @@ package co.edu.uvpalmira.fpoe.entidades;
 public class TipoProducto {
     
     private String descripcion;
-    private short porcentajeIva;
+    private float porcentajeIva;
+    
+    public TipoProducto(){
+    }
 
-    public TipoProducto(String descripcion, short porcentajeIva) {
+    public TipoProducto(String descripcion, float porcentajeIva) {
         this.descripcion = descripcion;
         this.porcentajeIva = porcentajeIva;
     }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public float getPorcentajeIva() {
+        return porcentajeIva;
+    }
+    
+    
 }
